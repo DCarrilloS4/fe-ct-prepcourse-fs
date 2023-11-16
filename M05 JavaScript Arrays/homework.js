@@ -34,12 +34,16 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Agrega el "elemento" al final del arreglo recibido.
   // Retorna el arreglo.
   // Tu código:
+  array.push(elemento);
+  return array;
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Agrega el "elemento" al comienzo del arreglo recibido.
   // Retorna el arreglo.
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 function dePalabrasAFrase(palabras) {
@@ -48,6 +52,14 @@ function dePalabrasAFrase(palabras) {
   // con un espacio entre cada palabra.
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
   // Tu código:
+  var frase = "";
+  for (var i = 0; i < palabras.length; i++) {
+    frase += palabras[i];
+    if (i < palabras.length - 1) {
+      frase += " ";
+    }
+  }
+  return frase;
 }
 
 function arrayContiene(array, elemento) {
