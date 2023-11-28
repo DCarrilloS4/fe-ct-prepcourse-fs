@@ -66,18 +66,35 @@ function arrayContiene(array, elemento) {
   // Verifica si el elemento existe dentro del arreglo recibido.
   // Retornar true si está, o false si no está.
   // Tu código:
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === elemento) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function agregarNumeros(arrayOfNums) {
   // El parámetro "arrayOfNums" debe ser un arreglo de números.
   // Suma todos los elementos y retorna el resultado.
-  // Tu código:
+  // Tu código
+  var resultado = 0;
+  for (var i = 0; i < arrayOfNums.length; i++) {
+    resultado += arrayOfNums[i];
+  }
+  return resultado;
 }
 
 function promedioResultadosTest(resultadosTest) {
   // El parámetro "resultadosTest" es un arreglo de números.
   // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
   // Tu código:
+  var resultado = 0;
+  for (var i = 0; i < resultadosTest.length; i++) {
+    resultado += resultadosTest[i];
+  }
+  var resultadoFinal = resultado / resultadosTest.length;
+  return resultadoFinal;
 }
 
 function numeroMasGrande(arrayOfNums) {
