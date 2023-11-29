@@ -100,7 +100,15 @@ function promedioResultadosTest(resultadosTest) {
 function numeroMasGrande(arrayOfNums) {
   // El parámetro "arrayOfNums" es un arreglo de números.
   // Retornar el número más grande.
-  // Tu código:
+  // Tu código: 
+  var NumeromasGrande = arrayOfNums [ 0 ];{
+  for (var i = 1; i <arrayOfNums.length; i++ ) {
+    if ( arrayOfNums[i] > NumeromasGrande){
+      NumeromasGrande = arrayOfNums[i]
+    }
+    NumeromasGrande[i] = arrayOfNums ;
+  }}
+  return NumeromasGrande
 }
 
 function multiplicarArgumentos() {
