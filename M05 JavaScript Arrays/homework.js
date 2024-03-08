@@ -252,6 +252,13 @@ function continueStatement(num) {
   // se continua con la siguiente iteración.
   // [PISTA]: utiliza el statement 'continue'.
   // Tu código:
+  var Arreglosinel5 = [];
+  for (var i = 0; i < 10; i++) {
+    if (i === 5) continue;
+    num += 2;
+    Arreglosinel5.push(num);
+  }
+  return Arreglosinel5;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
