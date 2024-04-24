@@ -45,6 +45,8 @@ function invocarMetodo(objeto, metodo) {
   // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
   // [NOTA]: no necesitar retornar nada.
   // Tu código:
+  var Tieneonolapropiedad = objeto.hasOwnProperty(metodo);
+  if (Tieneonolapropiedad) objeto[metodo]();
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
