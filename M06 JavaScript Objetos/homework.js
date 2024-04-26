@@ -53,18 +53,29 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
   // Debes multiplicar este número por 5 y retornar el resultado.
   // Tu código:
+  var Resultadodelejercicio = objetoMisterioso.numeroMisterioso * 5;
+  return Resultadodelejercicio;
 }
 
 function eliminarPropiedad(objeto, propiedad) {
   // El parámetro "propiedad" es una propiedad del objeto que recibes.
   // Debes eliminarla del objeto y retornarlo finalmente.
   // Tu código:
+
+  delete objeto[propiedad];
+  return objeto;
 }
 
 function tieneEmail(objetoUsuario) {
   // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
   // En ese caso retornar true. Caso contrario, false.
   // Tu código:
+  var tieneEmail = objetoUsuario.hasOwnProperty("email");
+  if (tieneEmail === true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function tienePropiedad(objeto, propiedad) {
